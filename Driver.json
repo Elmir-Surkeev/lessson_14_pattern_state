@@ -1,0 +1,17 @@
+[
+  {
+    "id": "drv-1",
+    "name": "Sasha",
+    "isFree": false
+  },
+  {
+    "id": "drv-2",
+    "name": "Vasya",
+    "isFree": false
+  },
+  {
+    "id": "drv-3",
+    "name": "Petya",
+    "isFree": false
+  }
+]
