@@ -28,7 +28,7 @@ public class Action {
                 break;
             case 2:
                 try {
-                    truck.getTruckState().startDriving(truck);
+                    truck.getTruckState().startRepair(truck);
                 } catch (Exception e) {
                     System.out.println("Ошибка при отправке на ремонт: " + e.getMessage());
                 }

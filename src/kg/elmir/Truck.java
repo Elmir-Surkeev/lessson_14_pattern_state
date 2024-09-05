@@ -41,7 +41,7 @@ public class Truck {
         }
     }
     public State getTruckState() {
-        return truckState;
+        return this.truckState;
     }
 
 
@@ -79,7 +79,7 @@ public class Truck {
 
     @Override
     public String toString() {
-        return  " id = " + id + "\n" +
+        return  " id = " + (id+1) + "\n" +
                 " CarName = " + name  + "\n" +
                 " driverName = " + driver.getName() + "\n" +
                 " driverId = " + driver.getId() + "\n" +
