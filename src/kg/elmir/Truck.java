@@ -83,7 +83,7 @@ public class Truck {
                 " CarName = " + name  + "\n" +
                 " driverName = " + driver.getName() + "\n" +
                 " driverId = " + driver.getId() + "\n" +
-                " driverId = " + driver.isIfFree() + "\n" +
+                " driver Free? = " + driver.isIfFree() + "\n" +
                 " state = " + state;
     }
 }
