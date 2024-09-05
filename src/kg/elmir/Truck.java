@@ -15,6 +15,7 @@ public class Truck {
             System.out.println(e.getMessage());
         }
     }
+
     public void startDriving(){
         try{
             this.truckState.startDriving(this);
@@ -38,6 +39,9 @@ public class Truck {
             case "repair" -> this.truckState = new onRepairState();
             case "route" -> this.truckState = new onRouteState();
         }
+    }
+    public State getTruckState() {
+        return truckState;
     }
 
 
@@ -75,11 +79,11 @@ public class Truck {
 
     @Override
     public String toString() {
-        return "Truck{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", driver=" + driver +
-                ", state='" + state + '\'' +
-                '}';
+        return  " id = " + id + "\n" +
+                " CarName = " + name  + "\n" +
+                " driverName = " + driver.getName() + "\n" +
+                " driverId = " + driver.getId() + "\n" +
+                " driverId = " + driver.isIfFree() + "\n" +
+                " state = " + state;
     }
 }
