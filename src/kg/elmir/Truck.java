@@ -79,11 +79,13 @@ public class Truck {
 
     @Override
     public String toString() {
-        return  " id = " + (id+1) + "\n" +
+        return  " \n"+
+                " id = " + (id-1) + "\n" +
                 " CarName = " + name  + "\n" +
                 " driverName = " + driver.getName() + "\n" +
                 " driverId = " + driver.getId() + "\n" +
                 " driver Free? = " + driver.isIfFree() + "\n" +
-                " state = " + state;
+                " state = " + state+ "\n"+
+                " _________________________________";
     }
 }
