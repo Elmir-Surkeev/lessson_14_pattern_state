@@ -11,13 +11,12 @@
   },
   {
     "id": "drv-3",
-    "name": "Elmir",
+    "name": "Elmirbek",
     "ifFree": true
   },
   {
     "id": "drv-4",
     "name": "Petya",
-    "ifFree": true
+    "ifFree": false
   }
-
 ]

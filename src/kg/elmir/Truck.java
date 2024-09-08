@@ -40,6 +40,14 @@ public class Truck {
             case "route" -> this.truckState = new onRouteState();
         }
     }
+    public boolean isIfFreee(Driver driver) {
+        boolean isFree = false;
+        if (driver.isIfFree()) {
+            System.out.println("Свободный водитель -> ID: " + driver.getId() + ", Имя: " + driver.getName());
+            isFree = true;
+        }
+        return isFree;
+    }
     public State getTruckState() {
         return this.truckState;
     }

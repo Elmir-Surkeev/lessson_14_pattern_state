@@ -13,11 +13,9 @@ public abstract class FindFreeDriver {
             for (Driver driver : drivers) {
                 System.out.println("Водитель: " + driver.getName() + " (ID: " + driver.getId() + "), Свободен: " + driver.isIfFree());
                 if (driver.isIfFree()) {
-                    System.out.println("Свободный водитель -> ID: " + driver.getId() + ", Имя: " + driver.getName());
                     hasFreeDriver = true;
                 }
             }
-
             if (!hasFreeDriver) {
                 throw new Exception("Нет свободных водителей");
             }
@@ -28,10 +26,19 @@ public abstract class FindFreeDriver {
 
 
             for (Driver driver : drivers) {
-                if (driver.getId().equals(selectedDriverId)) {
+                if (driver.getId().equals(selectedDriverId)&& driver.isIfFree()) {
                     truck.setDriver(driver);
                     driver.setIfFree(false);
                     JSONFIleHandler.writeDriver(drivers);
+
+                    Truck[] trucks = JSONFIleHandler.getTrucks();
+                    for (Truck t : trucks ) {
+                        if(t.getId()== truck.getId()){
+                            t.setDriver(driver);
+                            break;
+                        }
+                    }
+                    JSONFIleHandler.writeTrucks(trucks);
                     System.out.println("Теперь грузовик " + truck.getName() + " ведёт водитель " + driver.getName());
                     return;
                 }
