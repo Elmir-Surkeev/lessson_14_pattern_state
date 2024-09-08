@@ -1,1 +1,23 @@
-[{"id":"drv-1","name":"Sasha","ifFree":false},{"id":"drv-2","name":"Vasya","ifFree":false},{"id":"drv-3","name":"Petya","ifFree":false}]
+[
+  {
+    "id": "drv-1",
+    "name": "Sasha",
+    "ifFree": false
+  },
+  {
+    "id": "drv-2",
+    "name": "Vasya",
+    "ifFree": true
+  },
+  {
+    "id": "drv-3",
+    "name": "Elmir",
+    "ifFree": true
+  },
+  {
+    "id": "drv-4",
+    "name": "Petya",
+    "ifFree": true
+  }
+
+]
