@@ -1,1 +1,42 @@
-[{"id":1,"name":"Renault Magnum","driver":{"id":"drv-1","name":"Sasha","ifFree":false},"state":"base"},{"id":2,"name":"Volvo FH12","driver":{"id":"drv-2","name":"Vasya","ifFree":true},"state":"repair"},{"id":3,"name":"DAF XF","driver":{"id":"drv-3","name":"Petya","ifFree":false},"state":"route"}]
+[
+  {
+    "id": 1,
+    "name": "Renault Magnum",
+    "driver": {
+      "id": "drv-1",
+      "name": "Sasha",
+      "ifFree": false
+    },
+    "state": "base"
+  },
+  {
+    "id": 2,
+    "name": "Volvo FH12",
+    "driver": {
+      "id": "drv-2",
+      "name": "Vasya",
+      "ifFree": true
+    },
+    "state": "repair"
+  },
+  {
+    "id": 3,
+    "name": "ES 300h",
+    "driver": {
+      "id": "drv-3",
+      "name": "Elmirbek",
+      "ifFree": true
+    },
+    "state": "route"
+  },
+  {
+    "id": 4,
+    "name": "DAF XF",
+    "driver": {
+      "id": "drv-4",
+      "name": "Petya",
+      "ifFree": false
+    },
+    "state": "base"
+  }
+]
