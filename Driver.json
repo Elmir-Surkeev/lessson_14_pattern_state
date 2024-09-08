@@ -2,12 +2,12 @@
   {
     "id": "drv-1",
     "name": "Sasha",
-    "ifFree": false
+    "ifFree": true
   },
   {
     "id": "drv-2",
     "name": "Vasya",
-    "ifFree": true
+    "ifFree": false
   },
   {
     "id": "drv-3",
